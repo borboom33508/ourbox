@@ -1,33 +1,24 @@
-วชิรวิทย์ อุดมวรกุลชัย 6210450709 \
-\************************************************************\
-...สิ่งที่แก้ไข(Polymorphism)... \
-เปลี่ยนชื่อ Class MailList เป็น ServiceList และทำการลบ Class DocumentList 
-และ ParcelList และใช้ Object ของ ServiceList เป็นคลาสต้นแบบใน
-การทำให้เกิด Polymorphism ทั้งการอ่านไฟล์ และ Method ต่างๆที่คล้ายกัน ตัวอย่างเช่น Class History
-และ Class Export เป็นต้น\
-\
-...สิ่งที่แก้ไข(ส่วนของเจ้าหน้าที่ส่วนกลาง)...\
-ทำการแก้ไขในการเพิ่มห้องที่ลบไปจากไฟล์ และสามารถเพิ่มห้องได้\
+# OURBOX
 
-*************************************************************\
-\
-วิธีการรันโปรแกรม ---> เข้าไปยัง folder "jarfileAndPDF" และทำการดับเบิ้ลคลิกไปยังไฟล์ที่ชื่อว่า
- "6210450709-jar" หากไม่สามารถเข้าโปรแกรมได้ ให้ใช้วิธีการเข้าผ่าน Command prompt และใส่
- java -jar <repository path>\<6210450709-jar.jar> \
- \
-WEEK1 : เพิ่ม maven ไปในตัวโปรเจคและการใส่ dependendy ใน pom file \
-WEEK2 : สร้างหน้าในการเลือกใช้ Service ของเจ้าหน้าที่ส่วนกลางทั้ง 3 รูปแบบ \
-WEEK3 : สร้างการ Login โดยใช้ username และ password ในการเข้าถึงบริการ \
-WEEK4 : ปรับแต่งรูปแบบการ Login \
-WEEK5 : สร้าง class ในการอ่าน file เพื่อนำข้อมูลมาแสดงผล \
-WEEK6 : สร้าง feature แสดงข้อมูลผู้พัฒนาโปรแกรม \
-WEEK7 : การใช้ Strategy ในการเพิ่ม Option ค้นหาสิ่งที่ต้องการ \
-\
-โดยการจัดวางโครงสร้างแต่ละคลาสจะมี package เพื่อความเข้าใจง่ายในการนำไปพัฒนาโปรแกรมต่อ
-หรือการแก้ไขโปรแกรม \
-package ourbox (packageหลัก) จะเก็บไฟล์ในการทำงานย่อยทั้งหมด \
-package account จะประกอบไปด้วยคลาสทั้งหมดที่เกี่ยวกับบัญชี\
-package myfile จะเก็บตัวเขียนไฟล์และอ่านไฟล์ของโปรแกรม โดยมีไฟล์ของบัญชี
-และไฟล์ของจดหมาย เอกสาร และพัสดุ\
-package service ประกอบไปด้วย ไฟล์ของฟีเจอร์บริการต่างๆของโปรแกรม\
-package stock ประกอบไปด้วย คลาสในการแสดงคลังข้อมูลทั้งหมดของโปรแกรม 
+<b> How to run jar file</b> <br>
+* Get into "jarfileAndPDF" then open a '6210450709-jar'<br><br>
+* Use command prompt, then type
+```java -jar <repository path>\<6210450709-jar.jar> ```<br><br>
+-----------------------------------------------------------------------------------------------------------<br><br>
+<b>Update</b> <br><br>
+WEEK1 : add maven into project.<br><br>
+WEEK2 : Create UI for service.<br><br>
+WEEK3 : Implement authentication component.<br><br>
+WEEK4 : Fix login model.<br><br>
+WEEK5 : Create class for read a file.<br><br>
+WEEK6 : Add dev information.<br><br>
+WEEK7 : Add function search a residents.<br><br>
+-----------------------------------------------------------------------------------------------------------<br><br>
+# Packages
+
+
+Ourbox (main package): collect all sub function in an application.<br><br>
+Account: collect residents information<br><br>
+Myfile: database as csv.<br><br>
+Service: all features in an application.<br><br>
+Stock: stock information of parcels or mailbox.<br><br>
