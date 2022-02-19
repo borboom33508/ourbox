@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: fffff0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ourbox.service.AddDocument">
+   <children>
+      <Label layoutX="87.0" layoutY="83.0" text="Document">
+         <font>
+            <Font name="Arial Black" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToServiceBtn" layoutX="57.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleBackToServiceBtn" prefHeight="31.0" prefWidth="74.0" text="Back" />
+      <AnchorPane fx:id="addImageBtn" layoutX="373.0" layoutY="61.0" prefHeight="421.0" prefWidth="399.0" style="-fx-background-color: f3e9d0;">
+         <children>
+            <TextField fx:id="receiverNameText" layoutX="136.0" layoutY="36.0" promptText="Villager username" />
+            <Label layoutX="40.0" layoutY="40.0" prefHeight="22.0" prefWidth="71.0" text="Send to">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="106.0" prefHeight="23.0" prefWidth="67.0" text="id-Room">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="176.0" prefHeight="21.0" prefWidth="49.0" text="From">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="roomNumberText" layoutX="136.0" layoutY="102.0" promptText="Id-room" />
+            <TextField fx:id="senderNameText" layoutX="136.0" layoutY="172.0" promptText="Sender Name" />
+            <TextField fx:id="sizeText" layoutX="136.0" layoutY="242.0" promptText="Inch x Inch" />
+            <Label layoutX="48.0" layoutY="242.0" prefHeight="31.0" prefWidth="41.0" text="Size">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="363.0" text="Prioritize">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="imageText" editable="false" layoutX="136.0" layoutY="302.0" promptText="Image" />
+            <TextField fx:id="prioritizeText" layoutX="136.0" layoutY="359.0" promptText="Level 1 - 5" />
+            <Text layoutX="43.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Text>
+            <Label fx:id="sendToStatus" layoutX="331.0" layoutY="41.0" prefHeight="21.0" prefWidth="5.0" textFill="#f80000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="roomStatus" layoutX="328.0" layoutY="108.0" prefHeight="21.0" prefWidth="5.0" textFill="#f80000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="fromStatus" layoutX="328.0" layoutY="177.0" prefHeight="21.0" prefWidth="5.0" textFill="#f80000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="sizeStatus" layoutX="327.0" layoutY="248.0" prefHeight="21.0" prefWidth="5.0" textFill="#f80000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="imageStatus" layoutX="324.0" layoutY="305.0" prefHeight="21.0" prefWidth="5.0" textFill="#f80000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="priorityStatus" layoutX="328.0" layoutY="364.0" prefHeight="21.0" prefWidth="71.0" textFill="#f80000">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="addFileBtn" layoutX="255.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleAddImageBtnOnAction" text="Browse" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="documentSubmitBtn" layoutX="521.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleSubmitBtnOnAction" text="Submit" />
+      <Label fx:id="showStatus2" layoutX="490.0" layoutY="492.0" prefHeight="21.0" prefWidth="129.0" textFill="RED" />
+      <TextField fx:id="pathText" editable="false" layoutX="144.0" layoutY="278.0" prefHeight="31.0" prefWidth="82.0" />
+      <ImageView fitHeight="159.0" fitWidth="162.0" layoutX="123.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/contract.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
